@@ -11,4 +11,4 @@ app.use((_, res) => {
   res.sendFile(join(__dirname, "dist", "index.html"));
 });
 
-app.listen(443, () => console.log("Listening on port 8080"));
+app.listen(8080, () => console.log("Listening on port 8080"));
