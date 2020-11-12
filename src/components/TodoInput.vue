@@ -51,7 +51,6 @@
           //second param is data insert_todos result of mutation
           update: (cache, { data: { insert_todos }}) => {
             //Read the data from our cache for this query
-            console.log(insert_todos);
             try {
               if(this.type === "private"){ //check if inserted in private 
                 const data = cache.readQuery({  //cache.readQuery() not contact GraphQL server, but read from local cache 

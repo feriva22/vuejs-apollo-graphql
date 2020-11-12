@@ -72,7 +72,6 @@ export default {
         update: (store, { data: { update_todos } }) => {
           if (update_todos.affected_rows) {
             //if affected_rows not 0
-            console.log(update_todos);
             if (this.type === "private") {
               // Read the data from our cache for this query.
               const data = store.readQuery({
@@ -108,7 +107,6 @@ export default {
         },
         update: (store, {data: {delete_todos}}) => {
           if(delete_todos.affected_rows){
-            console.log(delete_todos);
             if (this.type === "private") {
               // Read the data from our cache for this query.
               const data = store.readQuery({
